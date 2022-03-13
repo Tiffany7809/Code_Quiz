@@ -1,3 +1,27 @@
-h1 {
+/*global styles*/
+* {
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* styles for h1 */
+h1 {
+    font-size: xx-large;;
+}
+/*paragraph styles*/
+p {
+    line-height: .5;
+    font-size: larger;
+}
+
+/*buttons styles*/
+button {
+    background-color: blueviolet;
+    border: 2px, black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 20%;
 }
