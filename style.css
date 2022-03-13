@@ -34,7 +34,7 @@ button {
 }
 
 /* styles for Start page */
-#page1 {
+#Home {
     /* display: none; */
 }
 
@@ -49,27 +49,27 @@ p {
 
 /* section/page Styles */
 
-#page2 {
+#Q1 {
     /* display: none; */
 }
 
-#page3 {
+#Q2 {
     /* display: none; */
 }
 
-#page4 {
+#Q3 {
     /* display: none; */
 }
 
-#page5 {
+#Q4 {
     /* display: none; */
 }
 
-#page6 {
+#Q5 {
     /* display: none; */
 }
 
-#page7 {
+#yourScore {
     /* display: none; */
 }
 
