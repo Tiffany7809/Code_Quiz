@@ -4,6 +4,11 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+   display: flex;
+   flex-direction: column;
+}
+
 .highscores {
     /* position in top left corner */
     position: absolute;
@@ -35,7 +40,7 @@ button {
 
 /* styles for Start page */
 #Home {
-    /* display: none; */
+    /* visibility:hidden; */
 }
 
 h1 {
@@ -50,34 +55,33 @@ p {
 /* section/page Styles */
 
 #Q1 {
-    /* display: none; */
+    /* visibility:hidden; */
 }
 
 #Q2 {
-    /* display: none; */
+    /* visibility:hidden; */
 }
 
 #Q3 {
-    /* display: none; */
+    /* visibility:hidden; */
 }
 
 #Q4 {
-    /* display: none; */
+    /* visibility:hidden; */
 }
 
 #Q5 {
-    /* display: none; */
+    /* visibility:hidden; */
 }
 
 #yourScore {
-    /* display: none; */
+    /* visibility:hidden; */
 }
 
 
 #scorePage {
-    /* display:none; */
+    /* visibility:hidden; */
 }
-
 
 
 
