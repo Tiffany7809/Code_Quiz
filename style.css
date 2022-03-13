@@ -17,11 +17,27 @@ p {
 /*buttons styles*/
 button {
     background-color: blueviolet;
-    border: 2px, black;
+    border: 2px, 1px black;
     color: white;
     padding: 5px;
     text-align: center;
     display: inline-block;
     font-size: 20px;
     border-radius: 20%;
+}
+
+.highscores {
+    /* position in top left corner */
+    position: absolute;
+    top:0;
+    left: 30px;
+    font-size: 20px;
+}
+
+.countdown {
+    /* position in top right corner */
+    position: absolute;
+    top:0;
+    right: 30px;
+    font-size: 20px;
 }
