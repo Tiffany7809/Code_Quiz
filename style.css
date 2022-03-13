@@ -16,7 +16,7 @@ p {
 
 /*buttons styles*/
 button {
-    background-color: blueviolet;
+    background-color: rgb(59, 18, 97);
     border: 2px, 1px black;
     color: white;
     padding: 5px;
@@ -24,6 +24,7 @@ button {
     display: inline-block;
     font-size: 20px;
     border-radius: 20%;
+    margin: 5px;
 }
 
 .highscores {
@@ -40,4 +41,16 @@ button {
     top:0;
     right: 30px;
     font-size: 20px;
+}
+
+/* Page 2 Styles */
+
+#page2 {
+    /* display:none; */
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
 }
