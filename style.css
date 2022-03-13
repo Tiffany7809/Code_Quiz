@@ -34,6 +34,10 @@ button {
 }
 
 /* styles for Start page */
+#page1 {
+    /* display: none; */
+}
+
 h1 {
     font-size: xx-large;;
 }
@@ -42,7 +46,6 @@ p {
     line-height: .5;
     font-size: larger;
 }
-
 
 /* section/page Styles */
 
@@ -59,12 +62,23 @@ p {
 }
 
 #page5 {
-     /* display: none; */
+    /* display: none; */
 }
 
 #page6 {
-     /* display: none; */
+    /* display: none; */
 }
+
+#page7 {
+    /* display: none; */
+}
+
+
+#scorePage {
+    /* display:none; */
+}
+
+
 
 
 ul {
