@@ -17,7 +17,7 @@ body {
     font-size: 20px;
 }
 
-.countdown {
+#countdown {
     /* position in top right corner */
     position: absolute;
     top:0;
@@ -81,6 +81,16 @@ p {
 
 #scorePage {
     /* visibility:hidden; */
+    
+}
+
+table {
+    background-color: palegoldenrod;
+    border: black solid 2px;
+    margin-left: 45%;
+}
+th, td {
+    border: black solid 1px;
 }
 
 

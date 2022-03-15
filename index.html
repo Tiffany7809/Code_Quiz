@@ -9,8 +9,9 @@
 
      <!-- Highscores page  -->
      <div class = highscores><a href="#yourScore">View Highscores</a></div>
+     
      <!-- countdown timer -->
-     <div class = countdown> Time: </div>
+     <div id = "countdown"> </div>
 
     <!-- STARTING PAGE -->
     <section id="Home">
@@ -23,7 +24,7 @@
         <p>by 10 seconds!</p>
 
         <!-- start button -->
-        <button id = start>Start Quiz</button>
+        <button id ="startGame">Start Quiz</button>
     </section>
    
     <!-- PAGE 2 -->
@@ -84,22 +85,31 @@
     <!-- PAGE 7 -->
     <section id="yourScore">
         <h1>All Done!</h1>
-        <div score="score">Your Score:</div>
+        <div id="score">Your Score:</div>
         
-        <form action="">
-            <label initials="initials">Enter your initials:</label><br>
+        <form id="playerInfo" action="">
+            <label id="player" initials="player">Enter your initials:</label><br>
             <input type="text" id="initials" name="initials" value=" "><br>
             <input type="submit" value="Submit">
-          </form> 
+        </form> 
 
     </section>
 
     <!-- High Scores -->
     <section id="scorePage">
         <h1>Highscores</h1>
-        <table>
 
+        <table id="table">
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td id="td1">Brak</td>
+                <td id="td2">Over 9000!!!</td>
+            </tr>
         </table>
+
         <button id="back">Go Back</button>
         <button id="clear">Clear Highscores</button>
     </section>
