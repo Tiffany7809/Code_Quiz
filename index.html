@@ -5,123 +5,33 @@
     <link rel ="stylesheet" href ="style.css">
     <title>Code Quiz</title>
 </head>
-<body>
+<body id="startPage">
+    <div>
 
      <!-- Highscores page  -->
-     <div class = highscores><a href="#yourScore">View Highscores</a></div>
+         <div id = highScores>View Highscores</div>
      
      <!-- countdown timer -->
-     <div id = "countdown"> </div>
+         <div id = "countdown"> </div>
+
+    </div>
 
     <!-- STARTING PAGE -->
     <section id="Home">
-        <h1>Coding Quiz Challenge</h1>
+        <h1 id="pageHeader">Coding Quiz Challenge</h1>
 
         <br>
+        <div id="text">
+            <p> Try to answer the following code-related questions within the time</p> 
+            <p>limit! Keep in mind that incorrect answers will penalize youre score time </p>
+            <p>by 10 seconds!</p>
+        </div>
 
-        <p> Try to answer the following code-related questions within the time</p> 
-        <p>limit! Keep in mind that incorrect answers will penalize youre score time </p>
-        <p>by 10 seconds!</p>
 
         <!-- start button -->
         <button id ="startGame">Start Quiz</button>
     </section>
    
-    <!-- PAGE 2 -->
-    <section id="Q1">
-        <h2>Commonly used Data Types do NOT include:</h2>
-        <ul>
-            <li><button>1. Strings</button></li>
-            <li><button>2. Booleans</button></li>
-            <li><button>3. Alerts</button></li>
-            <li><button>4. Numbers</button></li>
-        </ul>
-    </section>
-
-    <!-- PAGE 3 -->
-    <section id="Q2">
-        <h2>The condition of an if/else statement is enclosed within____________.</h2>
-        <ul>
-            <li><button>1. Quotes</button></li>
-            <li><button>2. Curly Brackets</button></li>
-            <li><button>3. Parentheses</button></li>
-            <li><button>4. Square Brackets</button></li>
-        </ul>
-    </section>
-
-    <!-- PAGE 4 -->
-    <section id="Q3">
-        <h2>Arrays in JavaScript can be used to store ________.</h2>
-        <ul>
-            <li><button>1. Numbers and Strings</button></li>
-            <li><button>2. Other arrays</button></li>
-            <li><button>3. Booleans</button></li>
-            <li><button>4. All of the above</button></li>
-        </ul>
-    </section>
-
-    <!-- PAGE 5 -->
-    <section id="Q4">
-        <h2>String values must be enclosed within ________ when being assigned to variables.</h2>
-        <ul>
-            <li><button>1. Commas</button></li>
-            <li><button>2. Curly Brackets </button></li>
-            <li><button>3. Quotes</button></li>
-            <li><button>4. Parentheses</button></li>
-        </ul>
-    </section>
-
-    <!-- PAGE 6 -->
-    <section id="Q5">
-        <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
-        <ul>
-            <li><button>1. JavaScript</button></li>
-            <li><button>2. Terminal / Bash</button></li>
-            <li><button>3. for loops</button></li>
-            <li><button>4. console.log </button></li>
-        </ul>
-    </section>
-
-    <!-- PAGE 7 -->
-    <section id="yourScore">
-        <h1>All Done!</h1>
-        <div id="score">Your Score:</div>
-        
-        <form id="playerInfo" action="">
-            <label id="player" initials="player">Enter your initials:</label><br>
-            <input type="text" id="initials" name="initials" value=" "><br>
-            <input type="submit" value="Submit">
-        </form> 
-
-    </section>
-
-    <!-- High Scores -->
-    <section id="scorePage">
-        <h1>Highscores</h1>
-
-        <table id="table">
-            <tr>
-                <th>Name</th>
-                <th>Score</th>
-            </tr>
-            <tr>
-                <td id="td1">Brak</td>
-                <td id="td2">Over 9000!!!</td>
-            </tr>
-        </table>
-
-        <button id="back">Go Back</button>
-        <button id="clear">Clear Highscores</button>
-    </section>
-
-    <!-- add code questions -->
-    <!-- add buttons for answers-->
-    <!-- add form to enter user name at end of quiz -->
-
-
-
-
-
 
 
 
