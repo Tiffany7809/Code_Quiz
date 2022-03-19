@@ -18,6 +18,7 @@ body {
     font-size: 20px;
 }
 
+
 #countdown {
     /* position in top right corner */
     position: absolute;
@@ -61,13 +62,13 @@ p {
 
 
 table {
+    display: inline-block;
     background-color: palegoldenrod;
     border: black solid 2px;
-    margin-left: 45%;
+    width: 50%;
+
 }
-th, td {
-    border: black solid 1px;
-}
+
 
 
 

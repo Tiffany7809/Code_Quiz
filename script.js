@@ -182,10 +182,6 @@ function Q5() {
 };
 
 
-
-
-
-
 //High Scores function
 ScoreBoard.addEventListener("click", function(){
 
@@ -205,10 +201,11 @@ ScoreBoard.addEventListener("click", function(){
     //Creating back and clear buttons
     let clear = document.createElement("button");
     let Back = document.createElement("button");
+    let table = document.createElement("table");
     
     clear.innerHTML = "Clear"
     Back.innerHTML ="Go back"
-
+    page.appendChild(table);
     page.appendChild(clear);
     page.appendChild(Back);
 
@@ -218,13 +215,14 @@ ScoreBoard.addEventListener("click", function(){
         page.appendChild(text);
         page.appendChild(start);
         
-
         clear.remove();
         Back.remove();
+        table.remove();
     });
 
     //Cear button function
     clear.addEventListener("click", function(){
+        localStorage.clear();
 
     });
 
