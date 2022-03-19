@@ -17,23 +17,11 @@ var timeLeft = 120;
 //Quiz Questions
 
 
-
-var myQuestions = [
-    {
-      question: "A very useful tool used during development and debugging for printing content to the debugger is:",
-      answers: {
-          a: "JavaScript",
-          b: "Terminal/Bash",
-          c: "for loops",
-          d: "console.log"
-      },
-    },
-  ];
-
 // when start game is clicked, start the timer
 start.addEventListener("click", Game);
 
 function Game() {
+    start.remove();
     text.remove();
 
     //set timer behavior
@@ -57,6 +45,7 @@ function Game() {
             form.setAttribute("method", "post");
             form.setAttribute("action", "submit.php");
 
+            initials.setAttribute("id", "player");
             initials.setAttribute("type", "text");
             initials.setAttribute("name", "initials"); 
             initials.setAttribute("placeholder", "Initials");
@@ -73,19 +62,16 @@ function Game() {
             btn2.remove();
             btn3.remove();
             btn4.remove();
-
+            var inputPlayer= document.getElementById("player");
             form.onsubmit = function(event){
                 event.preventDefault();
-                localStorage.setItem("name", initials);
+                localStorage.setItem("name", inputPlayer.value);
+                localStorage.setItem("score", currentScore);
                 form.reset();
-           
-
             };
         }
     }, 1000);
 
-// MAKE TIME SUBTRACT 10 SECS ON WRONG ANSWER
-    start.remove();
   
     Heading.textContent = "Commonly used Data Types do NOT include:"; 
     page.appendChild(btn1); 
@@ -192,7 +178,7 @@ function Q5() {
     btn3.addEventListener("click", function (){ timeLeft -= 10; });
 
     btn4.innerHTML = "Console.log";
-    btn4.addEventListener("click", function (){ currentScore += 5; timeLeft -=120; });
+    btn4.addEventListener("click", function (){ currentScore += 5; timeLeft -= 100; });
 };
 
 
@@ -231,6 +217,7 @@ ScoreBoard.addEventListener("click", function(){
         Heading.textContent = "Coding Quiz Challenge"
         page.appendChild(text);
         page.appendChild(start);
+        
 
         clear.remove();
         Back.remove();
