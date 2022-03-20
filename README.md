@@ -7,3 +7,4 @@ The goal of this project is to create a code quiz that
 Writing the code for this Quiz gave me a lot of practice and challenges with JavaScript. The really hard part for me was figuring out how to cycle through the questions on differemt screens and getting a score board to display the scores stored in localStorage.
 
 
+![Screenshot (10)](https://user-images.githubusercontent.com/97773921/159149194-a4bc862a-30c4-4a5f-b80a-3e55b628614d.png)
