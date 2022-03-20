@@ -205,6 +205,7 @@ function ScorePage (){
     //Cear button function
     clear.addEventListener("click", function(){
         localStorage.clear();
+        Main.textContent = " "
     });
 
 }
