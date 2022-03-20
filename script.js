@@ -14,7 +14,6 @@ var text = document.getElementById("text");
 var ScoreBoard = document.getElementById("highScores");
 var currentScore = 0;
 var timeLeft = 120;
-//Quiz Questions
 
 
 // when start game is clicked, start the timer
@@ -40,7 +39,7 @@ function Game() {
             page.appendChild(score);
             score.innerHTML = "your score:" + " " + currentScore;
 
-            //form for entering initials
+            //form for entering initials on game completion
             form.innerHTML = "Enter your initials:"
             form.setAttribute("method", "post");
             form.setAttribute("action", "submit.php");
@@ -68,6 +67,7 @@ function Game() {
                 localStorage.setItem("name", inputPlayer.value);
                 localStorage.setItem("score", currentScore);
                 form.reset();
+                ScorePage();
             };
         }
     }, 1000);
@@ -79,7 +79,7 @@ function Game() {
     page.appendChild(btn3);
     page.appendChild(btn4);
 
-    //ASSIGN QUESTIONS TO NEW BUTTONS
+    //new answers
     btn1.innerHTML = "Strings";
     btn1.addEventListener("click", function (){ timeLeft -= 10; });
 
@@ -92,16 +92,13 @@ function Game() {
 
     btn4.innerHTML = "Numbers";
     btn4.addEventListener("click", function (){ timeLeft -= 10; });
-};
 
-function Q2() {
+
+    function Q2() {
     Heading.textContent = "The condition of an if/else statement is enclosed within____________."; 
-    page.appendChild(btn1); 
-    page.appendChild(btn2);
-    page.appendChild(btn3);
-    page.appendChild(btn4);
+    
 
-    //ASSIGN QUESTIONS TO NEW BUTTONS
+    //new answers
     btn1.innerHTML = "Quotes";
     btn1.addEventListener("click", function (){ timeLeft -= 10; });
 
@@ -114,16 +111,12 @@ function Q2() {
 
     btn4.innerHTML = "Square Brackets";
     btn4.addEventListener("click", function (){ timeLeft -= 10; });
-};
+    };
 
-function Q3() {
+    function Q3() {
     Heading.textContent = "Arrays in JavaScript can be used to store ________."; 
-    page.appendChild(btn1); 
-    page.appendChild(btn2);
-    page.appendChild(btn3);
-    page.appendChild(btn4);
 
-    //ASSIGN QUESTIONS TO NEW BUTTONS
+    //new answers
     btn1.innerHTML = "Numbers and Strings";
     btn1.addEventListener("click", function (){ timeLeft -= 10; });
 
@@ -136,16 +129,11 @@ function Q3() {
     btn4.innerHTML = "Al of the above";
     btn4.addEventListener("click", function (){ currentScore += 5; });
     btn4.addEventListener("click", Q4);
-};
+    };
 
-function Q4() {
+    function Q4() {
     Heading.textContent = "String values must be enclosed within ________ when being assigned to variables."; 
-    page.appendChild(btn1); 
-    page.appendChild(btn2);
-    page.appendChild(btn3);
-    page.appendChild(btn4);
-
-    //ASSIGN QUESTIONS TO NEW BUTTONS
+    //new answers
     btn1.innerHTML = "commas";
     btn1.addEventListener("click", function (){ timeLeft -= 10; });
 
@@ -158,16 +146,11 @@ function Q4() {
 
     btn4.innerHTML = "Parentheses";
     btn4.addEventListener("click", function (){ timeLeft -= 10; });
-};
+    };
 
-function Q5() {
+    function Q5() {
     Heading.textContent = "A very useful tool used during development and debugging for printing content to the debugger is:"; 
-    page.appendChild(btn1); 
-    page.appendChild(btn2);
-    page.appendChild(btn3);
-    page.appendChild(btn4);
-
-    //ASSIGN QUESTIONS TO NEW BUTTONS
+   //new answers
     btn1.innerHTML = "JavaScripts";
     btn1.addEventListener("click", function (){ timeLeft -= 10; });
 
@@ -179,11 +162,10 @@ function Q5() {
 
     btn4.innerHTML = "Console.log";
     btn4.addEventListener("click", function (){ currentScore += 5; timeLeft -= 100; });
+    };
 };
 
-
-//High Scores function
-ScoreBoard.addEventListener("click", function(){
+function ScorePage (){
 
     Heading.textContent = "High Scores"
     btn1.remove();
@@ -195,43 +177,40 @@ ScoreBoard.addEventListener("click", function(){
     form.remove();
     initials.remove();
     score.remove();
-
-
-
+    
     //Creating back and clear buttons
     let clear = document.createElement("button");
     let Back = document.createElement("button");
-    let table = document.createElement("table");
-    
+    let Main = document.createElement("table");
+    clear.setAttribute("class" ,"nav");
+    Back.setAttribute("class", "nav");
     clear.innerHTML = "Clear"
     Back.innerHTML ="Go back"
-    page.appendChild(table);
+
+    let DisplayName = localStorage.getItem("name");
+    let DisplayScore = localStorage.getItem("score");
+
+    //display user score
+    Main.textContent = DisplayName + " ----- " + DisplayScore;
+   
+    page.appendChild(Main);
     page.appendChild(clear);
     page.appendChild(Back);
 
     //Back button function
     Back.addEventListener("click", function(){
-        Heading.textContent = "Coding Quiz Challenge"
-        page.appendChild(text);
-        page.appendChild(start);
-        
-        clear.remove();
-        Back.remove();
-        table.remove();
+        window.location.reload();
     });
 
     //Cear button function
     clear.addEventListener("click", function(){
         localStorage.clear();
-
     });
 
-    
+}
 
-
-
-
-})
+//High Scores function
+ScoreBoard.addEventListener("click", ScorePage)
 
 
 
