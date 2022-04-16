@@ -17,10 +17,9 @@ Writing the code for this Quiz gave me a lot of practice and challenges with Jav
 ![Screenshot (10)](https://user-images.githubusercontent.com/97773921/159149194-a4bc862a-30c4-4a5f-b80a-3e55b628614d.png)
 
 
-![Screenshot (18)](https://user-images.githubusercontent.com/97773921/163659153-118ac549-332c-412d-bcc5-b52f98721e1a.png)
+![Screenshot (20)](https://user-images.githubusercontent.com/97773921/163659176-89eb48b3-d29b-4b4c-b845-dd1915a9eb65.png)
 
+![Screenshot (22)](https://user-images.githubusercontent.com/97773921/163659187-a3ade0f5-5607-44b7-b57d-0059641f20f3.png)
 
-![Screenshot (17)](https://user-images.githubusercontent.com/97773921/163659160-0a820a78-df64-4358-8f4a-1c5d83836352.png)
+https://tiffany7809.github.io/Code_Quiz/![Screenshot (10)](https://user-images.githubusercontent.com/97773921/163659194-246d2fe8-6e13-43f3-824e-d7b29971af3b.png)
 
-
-https://tiffany7809.github.io/Code_Quiz/
