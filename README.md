@@ -16,12 +16,13 @@ Writing the code for this Quiz gave me a lot of practice and challenges with Jav
 
 ![Screenshot (10)](https://user-images.githubusercontent.com/97773921/159149194-a4bc862a-30c4-4a5f-b80a-3e55b628614d.png)
 
+![Screenshot (19)](https://user-images.githubusercontent.com/97773921/163659229-445834f1-c9c8-41ae-a908-eb009b2aa36e.png)
 
 ![Screenshot (20)](https://user-images.githubusercontent.com/97773921/163659176-89eb48b3-d29b-4b4c-b845-dd1915a9eb65.png)
 
 ![Screenshot (22)](https://user-images.githubusercontent.com/97773921/163659187-a3ade0f5-5607-44b7-b57d-0059641f20f3.png)
 
-![Screenshot (10)](https://user-images.githubusercontent.com/97773921/163659194-246d2fe8-6e13-43f3-824e-d7b29971af3b.png)
+
 
 https://tiffany7809.github.io/Code_Quiz/
 
