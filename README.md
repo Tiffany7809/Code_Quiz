@@ -21,5 +21,7 @@ Writing the code for this Quiz gave me a lot of practice and challenges with Jav
 
 ![Screenshot (22)](https://user-images.githubusercontent.com/97773921/163659187-a3ade0f5-5607-44b7-b57d-0059641f20f3.png)
 
-https://tiffany7809.github.io/Code_Quiz/![Screenshot (10)](https://user-images.githubusercontent.com/97773921/163659194-246d2fe8-6e13-43f3-824e-d7b29971af3b.png)
+![Screenshot (10)](https://user-images.githubusercontent.com/97773921/163659194-246d2fe8-6e13-43f3-824e-d7b29971af3b.png)
+
+https://tiffany7809.github.io/Code_Quiz/
 
