@@ -16,4 +16,11 @@ Writing the code for this Quiz gave me a lot of practice and challenges with Jav
 
 ![Screenshot (10)](https://user-images.githubusercontent.com/97773921/159149194-a4bc862a-30c4-4a5f-b80a-3e55b628614d.png)
 
+
+![Screenshot (18)](https://user-images.githubusercontent.com/97773921/163659153-118ac549-332c-412d-bcc5-b52f98721e1a.png)
+
+
+![Screenshot (17)](https://user-images.githubusercontent.com/97773921/163659160-0a820a78-df64-4358-8f4a-1c5d83836352.png)
+
+
 https://tiffany7809.github.io/Code_Quiz/
